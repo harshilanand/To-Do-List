@@ -132,3 +132,28 @@ body {
 .toDoList li:hover {
   text-decoration: line-through wavy #b024fb;
 }
+
+.checked {
+  text-decoration: line-through;
+  position: relative;
+  text-decoration-style: wavy;
+  text-decoration-color: #b024fb
+}
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cd06f5;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #b024fb; /* Change background color when checked */
+  border-color: #b024fb; /* Change border color when checked */
+}
+
+.item {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
